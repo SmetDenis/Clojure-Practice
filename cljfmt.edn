@@ -1,0 +1,3 @@
+{:indentation?        false
+ :paths               ["src" "tests" "project.clj"]
+ :sort-ns-references? true}

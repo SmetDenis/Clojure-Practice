@@ -5,7 +5,7 @@
 (defn leap-year? [x]
   (if (= (rem x 100) 0) (= (rem x 400) 0) (= (rem x 4) 0)))
 
-(defn leap-year? [year]
+(defn leap-year-2? [year]
   (letfn [(divisible? [a b] (zero? (mod a b)))]
     (and (divisible? year 4) (or (not (divisible? year 100)) (divisible? year 400)))))
 
@@ -43,7 +43,7 @@
     (< x 20) "middle"
     :else "senior"))
 
-(defn programmer-level [points-count]
+(defn programmer-level-2 [points-count]
   (cond
     (< points-count 10) "junior"
     (and (>= points-count 10) (< points-count 20)) "middle"
@@ -60,7 +60,7 @@
     (6 7) "rest"
     "???"))
 
-(defn do-today [day-of-week]
+(defn do-today-2 [day-of-week]
   (cond
     (and (int? day-of-week)
          (<= 1 day-of-week 7))
