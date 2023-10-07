@@ -4,7 +4,7 @@
 
 Because I've tried all sorts of programming languages and realized that the world is going the wrong way...
 
-So I'm saving something here for muscle memory here.
+So I'm saving something here for muscle memory.
 
 ## Links
 
