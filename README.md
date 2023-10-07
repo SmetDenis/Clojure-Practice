@@ -18,6 +18,7 @@ So I'm saving something here for muscle memory.
 
 - [code-basics.com/ru/languages/clojure](https://code-basics.com/ru/languages/clojure)
 - [4clojure.oxal.org](https://4clojure.oxal.org/)
+- [braveclojure.com](https://www.braveclojure.com/clojure-for-the-brave-and-true/)
 
 ### Misc
 
