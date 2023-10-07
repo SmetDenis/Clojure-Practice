@@ -1,4 +1,5 @@
-(ns CodeBasics.l06-Vectors)
+(ns CodeBasics.l06-Vectors
+  (:require [clojure.string :as s]))
 
 ; 28. Vectors
 (defn zip [v1 v2]
@@ -54,3 +55,25 @@
      (filter even?))                                        ; (0 2 4 6 8)
 (into [] my-xf (range 10))                                  ; [0 2 4 6 8 10 12 14 16 18]
 (transduce my-xf + (range 10))                              ; 90
+
+; 33. Transducers creation
+(defn student-names
+  ([] (map first))
+  ([students] (sequence (student-names) students)))
+(defn lowercase-names
+  ([] (map clojure.string/lower-case))
+  ([students] (sequence (lowercase-names) students)))
+(defn slugify-names
+  ([] (map #(clojure.string/replace % #" " "-")))
+  ([students] (sequence (slugify-names) students)))
+
+(def do-name-magic
+  (comp
+    (student-names)
+    (lowercase-names)
+    (slugify-names)))
+
+(into [] do-name-magic
+      [["Luke Skywalker" "Jedi"]
+       ["Hermione Granger" "Magic"]
+       ["Walter White" "Chemistry"]])                       ; ["luke-skywalker" "hermione-granger" "walter-white"]

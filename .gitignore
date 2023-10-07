@@ -1,4 +1,5 @@
 .idea
+.clj-kondo
 pom.xml
 pom.xml.asc
 *.jar
