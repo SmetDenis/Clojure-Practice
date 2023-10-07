@@ -55,3 +55,24 @@
 (defmacro strange-macro [coll]
   `(apply - (apply + ~coll) ~coll))
 (strange-macro [1 2 3 4])
+
+; 48. Splicing
+(defmacro strange-print [str]
+  `(do
+     ~@(println (clojure.string/reverse str))
+     ~@(println (clojure.string/upper-case str))
+     ~@(println (clojure.string/lower-case str))
+     ~str))
+
+(strange-print "foo")
+(strange-print "!baz!")
+(strange-print "cloJURE")
+
+; 49. Gensym
+(defmacro auto-sum [x]
+  `(let [my-var# 10]
+     (+ my-var# ~x)))
+
+; 50. Macros - Advices
+(defmacro macro-inc [x]
+  `(inc x))

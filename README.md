@@ -13,12 +13,20 @@ So I'm saving something here for muscle memory.
 - [clojure.org/api/cheatsheet](https://clojure.org/api/cheatsheet)
 - [cljs.info/cheatsheet/](https://cljs.info/cheatsheet/)
 - [clojuredocs.org](http://clojuredocs.org/)
+- [Awesome Clojure - Libs](https://github.com/razum2um/awesome-clojure)
+- [Awesome Clojure - Links](https://github.com/mbuczko/awesome-clojure)
 
 ### Online courses
 
 - [code-basics.com/ru/languages/clojure](https://code-basics.com/ru/languages/clojure)
 - [4clojure.oxal.org](https://4clojure.oxal.org/)
+
+### Books
+
 - [braveclojure.com](https://www.braveclojure.com/clojure-for-the-brave-and-true/)
+- [grishaev.me](https://grishaev.me)
+- [SICP for Clojure](https://www.sicpdistilled.com/)
+- [Rich Hickey](https://github.com/tallesl/Rich-Hickey-fanclub)
 
 ### Misc
 
