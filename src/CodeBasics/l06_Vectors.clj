@@ -33,10 +33,12 @@
 
 ; 31. Immutable structures
 (defn partiphify [numbers parts]
-  (let [part (int (Math/ceil (/ (count numbers) parts)))
+  (let [part        (int (Math/ceil (/ (count numbers) parts)))
         divided-vec (vec (map vec (partition-all part numbers)))
-        final-vec (if (not= (count divided-vec) parts) (conj divided-vec []) divided-vec)]
+        final-vec   (if (not= (count divided-vec) parts) (conj divided-vec []) divided-vec)]
     final-vec))
+
+"sdasda asdasd"
 
 (partiphify [1] 2)                                          ; => [[1] []]
 (partiphify [1 2 3] 3)                                      ; => [[1] [2] [3]]

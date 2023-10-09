@@ -5,7 +5,7 @@
   (vector (swap! w1 - amount) (swap! w2 + amount)))
 
 (defn transit-2 [first-acc second-acc amount]
-  (let [first-proceeded (swap! first-acc - amount)
+  (let [first-proceeded  (swap! first-acc - amount)
         second-proceeded (swap! second-acc + amount)]
     [first-proceeded second-proceeded]))
 

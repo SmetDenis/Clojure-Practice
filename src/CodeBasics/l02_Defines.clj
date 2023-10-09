@@ -12,15 +12,15 @@
 
 ; 8. Functions
 (defn square [x] (* x x))
-(square 3) ; 9
+(square 3)                                                  ; 9
 
 ; 9. Lambda
 (def my-lamda ((fn [x y] (/ (+ x y) 2)) 2 4))
-(println my-lamda) ; 3
+(println my-lamda)                                          ; 3
 
 ; 10.
 (defn sum-of-squares [x y] (+ (* x x) (* y y)))
-(sum-of-squares 2 3) ; 13
+(sum-of-squares 2 3)                                        ; 13
 
 ; 11. Namespaces
 ;(ns my-ns                                                   ; определяем наше пространство имен, импортируем пространство math
@@ -31,6 +31,6 @@
 (defn prod-sum [x]
   (let [prod (* x x)]
     (+ x prod)))
-(prod-sum 2) ; 6
-(prod-sum 3) ; 12
-(prod-sum 4) ; 20
+(prod-sum 2)                                                ; 6
+(prod-sum 3)                                                ; 12
+(prod-sum 4)                                                ; 20
