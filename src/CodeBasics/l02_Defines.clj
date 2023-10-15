@@ -28,9 +28,11 @@
 ;  (defn my-cube [x] (m/cube x)))                            ; ссылаемся на форму cube в пространстве имен math
 
 ; 12. Let
-(defn prod-sum [x]
-      (let [prod (* x x)]
-           (+ x prod)))
+(defn prod-sum
+  [x]
+  (let [prod (* x x)]
+    (+ x prod)))
+
 (prod-sum 2)                                                ; 6
 (prod-sum 3)                                                ; 12
 (prod-sum 4)                                                ; 20

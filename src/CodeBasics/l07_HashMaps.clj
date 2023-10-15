@@ -1,8 +1,9 @@
 (ns CodeBasics.l07-HashMaps)
 
 ; 34. Hashes - intro
-(defn resolve [domains domain]
-      (get domains domain "DNS_PROBE_FINISHED_NXDOMAIN"))
+(defn resolve
+  [domains domain]
+  (get domains domain "DNS_PROBE_FINISHED_NXDOMAIN"))
 
 (resolve {"rubyonrails.org"      "211.116.107.5"
           "clojure.org"          "103.95.84.1"
@@ -17,11 +18,13 @@
 (resolve {"some.com" "127.0.0.1"} "test.net")               ; => "DNS_PROBE_FINISHED_NXDOMAIN"
 
 ; 35. Hashes - extra
-(defn freq [col]
-      (frequencies col))
+(defn freq
+  [col]
+  (frequencies col))
 
-(defn freq-2 [v]
-      (reduce (fn [acc x] (assoc acc x (inc (get acc x 0)))) {} v))
+(defn freq-2
+  [v]
+  (reduce (fn [acc x] (assoc acc x (inc (get acc x 0)))) {} v))
 
 (freq ["a" "b" "c" "a" "a" "c" "a" "d" "b"])                ; => {"a" 4, "b" 2, "c" 2, "d" 1}
 (freq [])                                                   ; => {}
@@ -31,8 +34,9 @@
 (freq [:a :b :c :d :a :a])                                  ; => {:a 3, :b 1, :c 1, :d 1}
 
 ; 36. Sorted maps
-(defn to-sorted-map [hash-coll]
-      (into (sorted-map) hash-coll))
+(defn to-sorted-map
+  [hash-coll]
+  (into (sorted-map) hash-coll))
 
 (to-sorted-map {3 :c
                 2 :b
