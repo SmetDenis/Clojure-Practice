@@ -1,4 +1,4 @@
-(ns FourEverClojure.p12
+(ns FourEverClojure.p012
   (:require [clojure.test :refer [deftest is]]))
 
 ; Problem 12, Sequences

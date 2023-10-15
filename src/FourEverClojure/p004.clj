@@ -1,4 +1,4 @@
-(ns FourEverClojure.p4
+(ns FourEverClojure.p004
   (:require [clojure.test :refer [deftest is]]))
 
 ; Problem 4, Lists

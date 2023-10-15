@@ -1,4 +1,4 @@
-(ns FourEverClojure.p20
+(ns FourEverClojure.p020
   (:require [clojure.test :refer [deftest is]]))
 
 ; Problem 20, Penultimate Element

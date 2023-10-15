@@ -1,4 +1,4 @@
-(ns FourEverClojure.p6
+(ns FourEverClojure.p006
   (:require [clojure.test :refer [deftest is]]))
 
 ; Problem 6, Vectors

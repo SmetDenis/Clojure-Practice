@@ -1,4 +1,4 @@
-(ns FourEverClojure.p15
+(ns FourEverClojure.p015
   (:require [clojure.test :refer [deftest is]]))
 
 ; Problem 15, Double Down

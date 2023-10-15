@@ -1,4 +1,4 @@
-(ns FourEverClojure.p10
+(ns FourEverClojure.p010
   (:require [clojure.test :refer [deftest is]]))
 
 ; Problem 10, Maps

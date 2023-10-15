@@ -1,4 +1,4 @@
-(ns FourEverClojure.p3
+(ns FourEverClojure.p003
   (:require [clojure.test :refer [deftest is]]))
 
 ; Problem 3, Strings

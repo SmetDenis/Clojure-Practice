@@ -1,4 +1,4 @@
-(ns FourEverClojure.p8
+(ns FourEverClojure.p008
   (:require [clojure.test :refer [deftest is]]))
 
 ; Problem 8, Sets

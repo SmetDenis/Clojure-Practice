@@ -1,4 +1,4 @@
-(ns FourEverClojure.p13
+(ns FourEverClojure.p013
   (:require [clojure.test :refer [deftest is]]))
 
 ; Problem 13, rest

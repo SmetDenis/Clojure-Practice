@@ -1,4 +1,4 @@
-(ns FourEverClojure.p18
+(ns FourEverClojure.p018
   (:require [clojure.test :refer [deftest is]]))
 
 ; Problem 18, filter

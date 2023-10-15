@@ -1,4 +1,4 @@
-(ns FourEverClojure.p5
+(ns FourEverClojure.p005
   (:require [clojure.test :refer [deftest is]]))
 
 ; Problem 5, conj on lists

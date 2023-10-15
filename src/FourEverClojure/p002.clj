@@ -1,4 +1,4 @@
-(ns FourEverClojure.p2
+(ns FourEverClojure.p002
   (:require [clojure.test :refer [deftest is]]))
 
 ; Problem 2, Simple Math

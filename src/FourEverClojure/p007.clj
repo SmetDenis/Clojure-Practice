@@ -1,4 +1,4 @@
-(ns FourEverClojure.p7
+(ns FourEverClojure.p007
   (:require [clojure.test :refer [deftest is]]))
 
 ; Problem 7, conj on vectors

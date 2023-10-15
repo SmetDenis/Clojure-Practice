@@ -1,4 +1,4 @@
-(ns FourEverClojure.p16
+(ns FourEverClojure.p016
   (:require [clojure.test :refer [deftest is]]))
 
 ; Problem 16, Hello World

@@ -1,4 +1,4 @@
-(ns FourEverClojure.p17
+(ns FourEverClojure.p017
   (:require [clojure.test :refer [deftest is]]))
 
 ; Problem 17, map

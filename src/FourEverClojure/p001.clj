@@ -1,4 +1,4 @@
-(ns FourEverClojure.p1
+(ns FourEverClojure.p001
   (:require [clojure.test :refer [deftest is]]))
 
 ; Problem 1, Nothing but the Truth
