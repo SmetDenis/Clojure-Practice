@@ -29,8 +29,8 @@
 
 ; 12. Let
 (defn prod-sum [x]
-  (let [prod (* x x)]
-    (+ x prod)))
+      (let [prod (* x x)]
+           (+ x prod)))
 (prod-sum 2)                                                ; 6
 (prod-sum 3)                                                ; 12
 (prod-sum 4)                                                ; 20
