@@ -26,7 +26,7 @@ jobs:
           cli: 'latest'
           bb: 'latest'
           cljfmt: 'latest'
-          kondo: 'latest'
+          clj-kondo: 'latest'
 
       - name: Codestyle - cljfmt
         run: bb lint:cs:check
