@@ -22,7 +22,7 @@
 ; 38. https://code-basics.com/ru/languages/clojure/lessons/atoms-validation
 (defn vec-even?
   [vector]
-  (and (not (empty? vector))
+  (and (not (boolean (empty? vector)))
        (vector? vector)
        (every? even? vector)))
 

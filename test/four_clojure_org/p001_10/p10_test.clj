@@ -7,11 +7,11 @@
 ; functions. Commas are whitespace.
 
 (def __ (:b {:a 10
-:b 20
-:c 30}))
+             :b 20
+             :c 30}))
 
 (deftest problem-test
   (is (= __ ((hash-map :a 10, :b 20, :c 30) :b)))
   (is (= __ (:b {:a 10,
-:b 20,
-:c 30}))))
+                 :b 20,
+                 :c 30}))))
