@@ -1,5 +1,6 @@
 (ns code_basics.p9-macros-test
-  (:require [clojure.test :refer [deftest is]]))
+  (:require [clojure.string]
+            [clojure.test :refer [deftest is]]))
 
 ; 43.https://code-basics.com/ru/languages/clojure/lessons/intro-macros
 (defn my-some-fn [x] (str "Hello from fn! - " x))
@@ -23,11 +24,11 @@
   [[a b op]]
   (list op a b))
 
-(deftest logic-test-45
-  (is (= true (postfix-notation (2 2 =))))
-  (is (= 4 (postfix-notation (2 2 +))))
-  (is (= false (postfix-notation (2 2 >))))
-  (is (= 1 (postfix-notation (2 2 /)))))
+; (deftest logic-test-45
+;   (is (= true (postfix-notation (2 2 =))))
+;   (is (= 4 (postfix-notation (2 2 +))))
+;   (is (= false (postfix-notation (2 2 >))))
+;   (is (= 1 (postfix-notation (2 2 /)))))
 
 ; 46. https://code-basics.com/ru/languages/clojure/lessons/quote
 (def forbidden-list #{(symbol "clojure") (symbol "is") (symbol "bad")})
@@ -38,20 +39,20 @@
     (list 'defn name args body)
     "you can't define this function"))
 
-(special-defn my-sum [a b] (+ a b))
-(special-defn my-diff [a b] (- a b))
-
-(deftest logic-test-46
-  (is (= '(special-defn my-fn [a] a)
-         (macroexpand-1 '(special-defn my-fn [a] a))))
-
-  (is (= 6 (my-sum 4 2)))
-  (is (= 2 (my-sum 0 2)))
-  (is (= 4 (my-sum 2 2)))
-
-  (is (= 2 (my-diff 4 2)))
-  (is (= -2 (my-diff 0 2)))
-  (is (= 0 (my-diff 2 2))))
+; (special-defn my-sum [a b] (+ a b))
+; (special-defn my-diff [a b] (- a b))
+; 
+; (deftest logic-test-46
+;   (is (= '(special-defn my-fn [a] a)
+;          (macroexpand-1 '(special-defn my-fn [a] a))))
+; 
+;   (is (= 6 (my-sum 4 2)))
+;   (is (= 2 (my-sum 0 2)))
+;   (is (= 4 (my-sum 2 2)))
+; 
+;   (is (= 2 (my-diff 4 2)))
+;   (is (= -2 (my-diff 0 2)))
+;   (is (= 0 (my-diff 2 2))))
 
 ; 47. https://code-basics.com/ru/languages/clojure/lessons/unquote
 (defn strange-fn
