@@ -1,5 +1,6 @@
 (ns four_clojure_org.p001_10.p8-test
-  (:require [clojure.test :refer [deftest is]]))
+  (:require [clojure.set :refer [union]]
+            [clojure.test :refer [deftest is]]))
 
 ; Problem 8, Sets
 ; Difficulty: elementary
@@ -9,4 +10,4 @@
 
 (deftest problem-test
   (is (= __ (set '(:a :a :b :c :c :c :c :d :d))))
-  (is (= __ (clojure.set/union #{:a :b :c} #{:b :c :d}))))
+  (is (= __ (union #{:a :b :c} #{:b :c :d}))))

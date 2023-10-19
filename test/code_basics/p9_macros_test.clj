@@ -1,5 +1,6 @@
 (ns code_basics.p9-macros-test
-  (:require [clojure.test :refer [deftest is]]))
+  (:require [clojure.string]
+            [clojure.test :refer [deftest is]]))
 
 ; 43.https://code-basics.com/ru/languages/clojure/lessons/intro-macros
 (defn my-some-fn [x] (str "Hello from fn! - " x))
