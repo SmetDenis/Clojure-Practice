@@ -1,4 +1,4 @@
-(ns four_clojure_org._
+(ns four_clojure_org.tmpl-test
   (:require [clojure.test :refer [deftest is]]))
 
 ;

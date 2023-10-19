@@ -28,11 +28,8 @@ jobs:
           cljfmt: 'latest'
           clj-kondo: 'latest'
 
-      - name: Codestyle - cljfmt
-        run: bb lint:cs:check
-
-      - name: Codestyle - kondo
-        run: bb lint:kondo
+      - name: Codestyle
+        run: bb lint
 
       - name: Unit tests
         run: bb test

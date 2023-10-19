@@ -1,7 +1,7 @@
 {:tasks
  {test          (shell "clojure -X:test")
   lint          (do
-                  (run 'lint:cs)
+                  (run 'lint:cs:check)
                   (run 'lint:kondo))
   lint:cs       (shell "cljfmt fix")
   lint:cs:check (shell "cljfmt check")
